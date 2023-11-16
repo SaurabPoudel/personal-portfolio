@@ -13,8 +13,8 @@ const Hero = () => {
   const [isRoot, setIsRoot] = useState(true);
   setTimeout(() => setIsRoot(false), 4000);
   return (
-    <section className="flex justify-center">
-      <div className="pt-10 px-8 md:max-w-4xl w-full">
+    <section className="flex justify-center  border-b-2 border-dotted border-lime-500 pb-10 ">
+      <div className="pt-10 px-8 md:max-w-6xl w-full">
         <h1 className="text-lime-500 text-3xl pb-10">./ Saurab Poudel</h1>
 
         <div className="bg-black  ">
@@ -65,6 +65,9 @@ const Hero = () => {
             </Link>
             <Link href="https://twitter.com/SaurabPoudel07" target="_blank">
               <Image src="/twitter.png" alt="twitter" width={30} height={30} />
+            </Link>
+            <Link href="https://lichess.org/@/SaurabPoudel20" target="_blank">
+              <Image src="/chess.svg" alt="chess" width={30} height={30} />
             </Link>
           </div>
         </div>
@@ -223,7 +226,7 @@ const KaliUser = (props: KaliRootProps) => {
           <div className="flex flex-col pl-4 translate-y-[-3vh]">
             <span> I learn </span>
             <span> I do web development </span>
-            <span>I hack</span>
+            <span>I play chess</span>
             <span>He/Him</span>
           </div>
         </div>
