@@ -1,12 +1,11 @@
 import Hero from "@/components/Hero";
+import Menu from "@/components/Menu";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <div className="text-red-800 text-3xl">
-        WORK IN PROGRESS .. CHECK THIS AFTER 5 DAYS
-      </div>
+      <Menu />
     </main>
   );
 }
