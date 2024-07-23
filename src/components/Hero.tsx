@@ -217,7 +217,7 @@ const KaliUser = (props: KaliRootProps) => {
         <Result result={props.result} />
         <div className="pt-10 flex ">
           <Image
-            src="/armin.png"
+            src="/zoro.jpg"
             width={100}
             height={60}
             alt="Armin"
