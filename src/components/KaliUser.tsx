@@ -82,9 +82,9 @@ const KaliUser = ({ command, result }: KaliUserProps) => {
             className=" translate-y-[-3vh]"
           />
           <div className="flex flex-col pl-4 translate-y-[-3vh]">
-            <span> I learn </span>
-            <span> I do web development </span>
-            <span>I play chess</span>
+            <span>Full Stack Web Developer</span>
+            <span> TypeScript, Next.js, Golang</span>
+            <span>Passionate about AI and Blockchain</span>
             <span>He/Him</span>
           </div>
         </div>
