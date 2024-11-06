@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Saurab Poudel",
   description:
-    "Saurab Poudel is a software engineer based in Kathmandu, Nepal.",
+    "Saurab Poudel is a fullstack devleoper based in Kathmandu, Nepal.",
 };
 
 export default function RootLayout({
