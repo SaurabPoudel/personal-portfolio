@@ -124,7 +124,7 @@ const Projects = () => {
                     className="flex items-center gap-2 text-green-500 hover:text-green-400 transition-colors z-10"
                   >
                     <FaExternalLinkAlt size={18} />
-                    <span>Deploy</span>
+                    <span>Site</span>
                   </Link>
                 )}
               </div>

@@ -55,7 +55,7 @@ const Menu = () => {
             <span className="text-white">$</span>
             <span className="animate-pulse">▊</span>
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold text-green-500">
+          <h2 className="text-2xl md:text-3xl font-bold text-green-500 glitch-text">
             ./connect.sh --show-all-links
           </h2>
         </motion.div>
@@ -99,6 +99,52 @@ const Menu = () => {
           <span className="animate-pulse ml-2">▊</span>
         </motion.div> */}
       </div>
+      <style jsx global>{`
+        .glitch-text {
+          text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+            -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+            0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+          animation: glitch 500ms infinite;
+        }
+
+        @keyframes glitch {
+          0% {
+            text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+              -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+              -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+          }
+          14% {
+            text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+              -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+              -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+          }
+          15% {
+            text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+              0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+              -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+          }
+          49% {
+            text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+              0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+              -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+          }
+          50% {
+            text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+              0.05em 0 0 rgba(0, 255, 0, 0.75),
+              0 -0.05em 0 rgba(0, 0, 255, 0.75);
+          }
+          99% {
+            text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+              0.05em 0 0 rgba(0, 255, 0, 0.75),
+              0 -0.05em 0 rgba(0, 0, 255, 0.75);
+          }
+          100% {
+            text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+              -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+              -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+          }
+        }
+      `}</style>
     </section>
   );
 };
